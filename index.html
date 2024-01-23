@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>THE CHECKIN NETWORK</title>
     <link rel="stylesheet" href="/dist/css/index.css" />
     <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body></body>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">THE CHECKIN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-shrink-0">
+      <div class="container-sm pt-5">
+        <h1 class="row justify-content-md-center mt-5">The checkin is a network to check-in on the people you love.</h1>
+        <p class="row justify-content-md-center lead  mt-4">Log in or create a new user to continue.</p>
+        <!-- <p>The Checkin is a network to check-in on the people you love.</p> -->
+        <div class="container-sm mt-5">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+            <label for="floatingPassword">Password</label>
+          </div>
+        </div>
+        <div class="container-sm mt-4">
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-primary btn-lg">Log in</button>
+            <button type="button" sclass="btn btn-secondary btn-lg">Create user</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="row justify-content-md-center fst-italic text-muted">check-in on the people you care about.</span>
+      </div>
+    </footer>
+  </body>
 </html>
