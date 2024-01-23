@@ -18,7 +18,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Home</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Feed</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">My profile</a>
@@ -30,31 +30,40 @@
     </header>
     <main class="flex-shrink-0">
       <div class="container-sm pt-5">
-        <div class="container-sm">
-          <h1 class="mt-5 text-center">The checkin is a network to check-in on the people you love.</h1>
-          <p class="lead mt-4 text-center">Log in or create a new user to continue.</p>
-        </div>
-        <div class="container-sm mt-5">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" min-length="8" />
-            <label for="floatingPassword">Password</label>
-          </div>
-        </div>
-        <div class="container-sm mt-4">
-          <div class="d-grid gap-2">
-            <button type="button" class="btn btn-primary btn-lg">Log in</button>
-            <button type="button" class="btn btn-secondary btn-lg">Create user</button>
+        <h1 class="mt-5 text-center">the checkin is a network to check-in on</h1>
+        <div id="carouselExampleSlidesOnly" class="carousel slide text-center" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <h1 class="fw-bolder">friends</h1>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <h1 class="fw-bolder">family</h1>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <h1 class="fw-bolder">loved ones</h1>
+            </div>
           </div>
         </div>
       </div>
+      <p class="lead mt-4 text-center">Log in or create a new user to continue.</p>
+      <form action="" class="container-sm mt-5">
+        <div class="form-floating mb-3">
+          <input title="funker det?" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" minlength="8" required />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="d-grid gap-2 mt-4">
+          <a href="profile/index.html"><button type="button" class="btn btn-primary btn-lg w-100">Log in</button></a>
+          <button type="submit" class="btn btn-outline-secondary btn-lg">Create new user</button>
+        </div>
+      </form>
     </main>
     <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="fst-italic text-muted text-center">check-in on the people you care about.</span>
+      <div class="container text-center">
+        <span class="fst-italic text-muted">Check-in on the people you care about.</span>
       </div>
     </footer>
   </body>
