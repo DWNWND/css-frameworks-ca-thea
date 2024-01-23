@@ -1,13 +1,13 @@
 {
-  "name": "css-frameworks-ca",
+  "name": "css-frameworks-ca-thea",
   "version": "0.0.1",
-  "description": "A starting point for the CSS Frameworks CA project",
+  "description": "My CA delivery for CSS Frameworks",
   "scripts": {
     "test": "echo \"We will learn more about testing in the Workflow course\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoroffFEU/css-frameworks-ca.git"
+    "url": "git+https://github.com/DWNWND/css-frameworks-ca-thea.git"
   },
   "keywords": [
     "CSS",
@@ -15,12 +15,13 @@
     "Frameworks",
     "Bootstrap",
     "SCSS",
-    "SASS"
+    "SASS",
+    "CA"
   ],
-  "author": "Oliver Dipple <oliver.dipple@noroff.no>",
+  "author": "Thea Oland <theola51924@noroff.no>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoroffFEU/css-frameworks-ca/issues"
+    "url": "https://github.com/DWNWND/css-frameworks-ca-thea/issues"
   },
-  "homepage": "https://github.com/NoroffFEU/css-frameworks-ca#readme"
+  "homepage": "https://github.com/DWNWND/css-frameworks-ca-thea#readme"
 }
