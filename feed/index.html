@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  <body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column h-100 bg-unique-4">
     <header>
       <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -46,7 +46,7 @@
       </nav>
     </header>
     <main class="flex-shrink-0">
-      <div class="row mt-5 pt-4 g-0">
+      <div class="container row mt-5 pt-4 g-0 mx-auto">
         <div class="col-md fixed mb-4">
           <div class="container text-center d-grid gap-4">
             <div class="card d-sm-none d-md-block">
@@ -75,9 +75,17 @@
                 </div>
               </div>
             </div>
+            <div class="card bg-unique-3">
+              <div class="card-header card-title h5">How are you feeling?</div>
+              <div class="card-body">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Share your general mood today</label>
+                </div>
+              </div>
+            </div>
             <div class="card bg-unique-2">
               <h5 class="card-title fw-bolder h3 pt-3">Send someone a:</h5>
-
               <div class="card-body">
                 <div class="btn-group d-flex d-md-none d-xl-flex" role="group" aria-label="Default button group">
                   <a href="#" class="btn btn-success">Message</a>
@@ -92,7 +100,6 @@
                   <a href="#" class="btn btn-warning flex-grow-1">Nudge</a>
                 </div>
               </div>
-
               <div class="card-footer text-muted pt-3 pb-3">
                 <p class="card-text">Check in on the people you care about</p>
               </div>
@@ -110,16 +117,8 @@
           </div>
         </div>
         <div class="col-md-8">
+          <div class="container text-center pb-3 pt-3"><h1>Your notifications</h1></div>
           <div class="container d-grid gap-4 text-center">
-            <div class="card">
-              <div class="card-header card-title h5">How are you feeling?</div>
-              <div class="card-body">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Share your general mood today</label>
-                </div>
-              </div>
-            </div>
             <div class="card">
               <div class="card-header text-muted">Today</div>
               <div class="card-body">
