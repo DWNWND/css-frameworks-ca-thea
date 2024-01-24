@@ -39,7 +39,7 @@ $grays: (
 $blue: #84ace3;
 $indigo: #6610f2;
 $purple: #6f42c1;
-$pink: #d63384;
+$pink: #f7b2d4;
 $red: #e68e97;
 $orange: #fd7e14;
 $yellow: #d1b769;
@@ -307,7 +307,9 @@ $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
+
 //added by me
+$mycolor: $pink;
 $reply: $orange;
 
 // scss-docs-end theme-color-variables
@@ -322,6 +324,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "mycolor": $pink,
 );
 // scss-docs-end theme-colors-map
 
