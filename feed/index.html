@@ -6,10 +6,27 @@
     <title>Feed</title>
     <link rel="stylesheet" href="/dist/css/index.css" />
     <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/js/custom-modal.js"></script>
   </head>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Example memory</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="../img/undraw_In_love_6sq2.png" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <body class="d-flex flex-column h-100">
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">THE CHECKIN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,31 +46,63 @@
       </nav>
     </header>
     <main class="flex-shrink-0">
-      <div class="row mt-5 g-0 m-3">
-        <div class="col-md">
+      <div class="row mt-5 pt-4 g-0">
+        <div class="col-md fixed mb-4">
           <div class="container text-center d-grid gap-4">
-            <div class="card bg-unique-2 ">
-      
-                <h5 class="card-title fw-bolder h3 pt-3">Send someone a:</h5>
-    
+            <div class="card d-sm-none d-md-block">
+              <div class="card-body p-4">
+                <div class="d-flex text-black">
+                  <div class="flex-shrink-0">
+                    <img src="/img/undraw_Drink_coffee_v3au.png" alt="Generic placeholder image" class="img-fluid" style="width: 180px; border-radius: 10px" />
+                  </div>
+                  <div class="flex-grow-1 ms-3 d-sm-none d-lg-block">
+                    <h5 class="mb-1">Ola Olsen</h5>
+                    <p class="mb-2 pb-1">"Feeling upbeat"</p>
+                    <div class="justify-content-around rounded-3 p-2 mb-2 bg-unique d-flex d-sm-none d-xl-flex">
+                      <div>
+                        <p class="small text-muted mb-1">Connections</p>
+                        <p class="mb-0">12</p>
+                      </div>
+                      <div>
+                        <p class="small text-muted mb-1">DIs</p>
+                        <p class="mb-0">8.5</p>
+                      </div>
+                    </div>
+                    <div class="d-flex pt-1">
+                      <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">Edit profile</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-unique-2">
+              <h5 class="card-title fw-bolder h3 pt-3">Send someone a:</h5>
+
               <div class="card-body">
-                <div class="btn-group" role="group" aria-label="Default button group">
+                <div class="btn-group d-flex d-md-none d-xl-flex" role="group" aria-label="Default button group">
                   <a href="#" class="btn btn-success">Message</a>
                   <a href="#" class="btn btn-danger">Thought</a>
                   <a href="#" class="btn btn-secondary">Hug</a>
                   <a href="#" class="btn btn-warning">Nudge</a>
                 </div>
+                <div class="d-none d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                  <a href="#" class="btn btn-success flex-grow-1">Message</a>
+                  <a href="#" class="btn btn-danger flex-grow-1">Thought</a>
+                  <a href="#" class="btn btn-secondary flex-grow-1">Hug</a>
+                  <a href="#" class="btn btn-warning flex-grow-1">Nudge</a>
+                </div>
               </div>
+
               <div class="card-footer text-muted pt-3 pb-3">
-              <p class="card-text">Check in on the people you care about</p>
-            </div>
+                <p class="card-text">Check in on the people you care about</p>
+              </div>
             </div>
             <div class="card bg-unique">
               <div class="card-header">
                 <h5 class="card-title fw-bolder h3 pt-3">New feature</h5>
                 <p class="card-text pt-3 pb-3">🌸 Shared memories 🌸</p>
               </div>
-              <img src="../img/IMG_1817.jpeg" class="card-img-top my-special-style" alt="..." />
+              <img src="../img/undraw_In_love_6sq2.png" class="card-img-top my-special-style" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" />
               <div class="card-body pt-3 pb-3">
                 <a href="#" class="btn btn-primary">Send someone a fond memory</a>
               </div>
@@ -62,6 +111,15 @@
         </div>
         <div class="col-md-8">
           <div class="container d-grid gap-4 text-center">
+            <div class="card">
+              <div class="card-header card-title h5">How are you feeling?</div>
+              <div class="card-body">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Share your general mood today</label>
+                </div>
+              </div>
+            </div>
             <div class="card">
               <div class="card-header text-muted">Today</div>
               <div class="card-body">
