@@ -27,10 +27,16 @@
   background-color: rgb(115, 127, 155);
 }
 .m-width-220 {
-  max-width: 220px;
+  max-width: 200px;
 }
 .m-width-100 {
   max-width: 50px;
+}
+.width-connections {
+  max-width: 50px;
+}
+.width-connections-container {
+  width: 100px;
 }
 
 // Example (the btn-unique and btn-lazy class needs to be added somwhere
