@@ -308,10 +308,6 @@ $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
 
-//added by me
-$mycolor: $pink;
-$reply: $orange;
-
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -324,7 +320,13 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+
+  //added by me
   "mycolor": $pink,
+  "myreply": $orange,
+  "mynav": #e8dcff,
+  "mylabel": #e5e4e4,
+  "myfooter": #f8f5ff,
 );
 // scss-docs-end theme-colors-map
 

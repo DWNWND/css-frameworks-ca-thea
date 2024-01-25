@@ -24,16 +24,16 @@
       </div>
     </div>
   </div>
-  <body class="d-flex flex-column h-100 bg-unique-4">
+  <body class="d-flex flex-column h-100 bg-mylabel">
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">THE CHECKIN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a class="nav-link active" href="index.html" aria-current="page">Feed</a>
               </li>
@@ -41,6 +41,11 @@
                 <a class="nav-link" href="../profile/index.html">My profile</a>
               </li>
             </ul>
+            <form class="d-flex gap-2 align-items-center">
+              <div class="text-muted w-100">Add new connection:</div>
+              <input class="form-control" type="search" placeholder="Username" aria-label="Search" />
+              <button class="btn btn-primary" type="submit">Add</button>
+            </form>
           </div>
         </div>
       </nav>
@@ -49,6 +54,10 @@
       <div class="container row mt-5 pt-4 g-0 mx-auto">
         <div class="col-md fixed mb-4">
           <div class="container text-center d-grid gap-4">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search posts" aria-label="Search" />
+              <button class="btn btn-warning" type="submit">Search</button>
+            </form>
             <div class="card d-sm-none d-md-block">
               <div class="card-body p-4">
                 <div class="d-flex text-black">
@@ -80,7 +89,8 @@
               <div class="card-body">
                 <div class="form-floating">
                   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Share your general mood today</label>
+                  <label for="floatingTextarea2">Share todays mood</label>
+                  <button type="submit" class="btn btn-outline-secondary w-100 mt-2">Post</button>
                 </div>
               </div>
             </div>
@@ -119,6 +129,23 @@
         <div class="col-md-8">
           <div class="container text-center pb-3 pt-3"><h1 class="text-mycolor">Your notifications</h1></div>
           <div class="container d-grid gap-4 text-center">
+            <div class="text-mynav">Sort notifications by:</div>
+            <div class="btn-group bg-myfooter" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+              <label class="btn btn-outline-warning" for="btnradio1">Messages</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+              <label class="btn btn-outline-warning" for="btnradio2">Hugs</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+              <label class="btn btn-outline-warning" for="btnradio3">Thoughts</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
+              <label class="btn btn-outline-warning" for="btnradio4">Nudges</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" />
+              <label class="btn btn-outline-warning" for="btnradio5">Memories</label>
+            </div>
             <div class="card">
               <div class="card-header text-muted">Today</div>
               <div class="card-body">

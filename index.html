@@ -9,7 +9,7 @@
   </head>
   <body class="d-flex flex-column h-100">
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-sm navbar-light bg-mynav fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">THE CHECKIN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,14 +46,14 @@
         </div>
       </div>
       <p class="lead mt-5 text-center">Log in or create a new user to continue.</p>
-      <form action="" class="container-sm mt-2">
+      <form action="/profile/index.html" class="container-sm mt-2">
         <div class="form-floating mb-3">
-          <input title="funker det?" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
-          <label for="floatingInput">Email address</label>
+          <input title="" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+          <label for="floatingInput" class="text-primary">Email address</label>
         </div>
         <div class="form-floating">
           <input type="password" class="form-control" id="floatingPassword" placeholder="Password" minlength="8" required />
-          <label for="floatingPassword">Password</label>
+          <label for="floatingPassword" class="text-primary">Password</label>
         </div>
         <div class="d-grid gap-2 mt-4">
           <a href="profile/index.html" type="button" class="btn btn-primary btn-lg w-100">Log in</a>
@@ -61,7 +61,7 @@
         </div>
       </form>
     </main>
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3 bg-myfooter">
       <div class="container text-center">
         <span class="fst-italic text-muted">Check-in on the people you care about.</span>
       </div>
