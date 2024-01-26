@@ -19,14 +19,14 @@
           <img src="../img/undraw_In_love_6sq2.png" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" />
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-new-feature" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
   <body class="d-flex flex-column h-100 bg-color1">
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-mynav">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">THE CHECKIN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,23 +51,19 @@
       </nav>
     </header>
     <main class="flex-shrink-0">
-      <div class="container row mt-5 pt-4 g-0 mx-auto">
+      <div class="container row mt-3 pt-4 g-0 mx-auto">
         <div class="col-md fixed mb-4">
           <div class="container text-center d-grid gap-4">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search posts" aria-label="Search" />
-              <button class="btn btn-warning" type="submit">Search</button>
-            </form>
             <div class="card d-sm-none d-md-block">
               <div class="card-body p-4">
                 <div class="d-flex text-black">
                   <div class="flex-shrink-0">
-                    <img src="/img/undraw_Drink_coffee_v3au.png" alt="Generic placeholder image" class="img-fluid" style="width: 180px; border-radius: 10px" />
+                    <img src="/img/undraw_Drink_coffee_v3au.png" alt="Generic placeholder image" class="img-fluid m-width-profile-img" />
                   </div>
                   <div class="flex-grow-1 ms-3 d-sm-none d-lg-block">
                     <h5 class="mb-1">Ola Olsen</h5>
                     <p class="mb-2 pb-1">"Feeling upbeat"</p>
-                    <div class="justify-content-around rounded-3 p-2 mb-2 bg-unique d-flex d-sm-none d-xl-flex">
+                    <div class="justify-content-around rounded-3 p-2 mb-2 bg-profile d-flex d-sm-none d-xl-flex">
                       <div>
                         <p class="small text-muted mb-1">Connections</p>
                         <p class="mb-0">12</p>
@@ -78,120 +74,177 @@
                       </div>
                     </div>
                     <div class="d-flex pt-1">
-                      <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">Edit profile</button>
+                      <a href="../profile/index.html" type="button" class="btn btn-outline-profile-btn me-1 flex-grow-1"> Edit profile / Connect</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card bg-unique-3">
+            <div class="card bg-post-bg">
               <div class="card-header card-title h5">How are you feeling?</div>
               <div class="card-body">
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <textarea class="form-control height-100" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
                   <label for="floatingTextarea2">Share your mood</label>
-                  <button type="submit" class="btn btn-outline-secondary w-100 mt-2">Post</button>
+                  <button type="submit" class="btn btn-post w-100 mt-2">Post</button>
                 </div>
               </div>
             </div>
-            <div class="card bg-unique-2">
+            <div class="card bg-send-checkin">
               <h5 class="card-title fw-bolder h3 pt-3">Send a:</h5>
               <div class="card-body">
-                <div class="btn-group d-flex d-md-none d-xl-flex" role="group" aria-label="Default button group">
-                  <a href="#" class="btn btn-success">Message</a>
-                  <a href="#" class="btn btn-danger">Thought</a>
-                  <a href="#" class="btn btn-secondary">Hug</a>
-                  <a href="#" class="btn btn-warning">Nudge</a>
-                </div>
-                <div class="d-none d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
-                  <a href="#" class="btn btn-success flex-grow-1">Message</a>
-                  <a href="#" class="btn btn-danger flex-grow-1">Thought</a>
-                  <a href="#" class="btn btn-secondary flex-grow-1">Hug</a>
-                  <a href="#" class="btn btn-warning flex-grow-1">Nudge</a>
+                <div class="d-flex flex-wrap gap-2 justify-content-evenly" role="group">
+                  <a href="#" class="btn btn-message flex-grow-1">Message</a>
+                  <a href="#" class="btn btn-thought flex-grow-1">Thought</a>
+                  <a href="#" class="btn btn-hug flex-grow-1">Hug</a>
+                  <a href="#" class="btn btn-nudge flex-grow-1">Nudge</a>
+                  <a href="#" class="btn btn-memory flex-grow-1">Memory</a>
                 </div>
               </div>
               <div class="card-footer text-muted pt-3 pb-3">
                 <p class="card-text">Check in on the people you care about</p>
               </div>
             </div>
-            <div class="card bg-unique">
+            <div class="card bg-new-feature-bg">
               <div class="card-header">
                 <h5 class="card-title fw-bolder h3 pt-3">New feature</h5>
                 <p class="card-text pt-3 pb-3">🌸 Shared memories 🌸</p>
               </div>
               <img src="../img/undraw_In_love_6sq2.png" class="card-img-top my-special-style" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" />
               <div class="card-body pt-3 pb-3">
-                <a href="#" class="btn btn-primary">Send someone a fond memory</a>
+                <a href="#" class="btn btn-new-feature w-100">Send someone a fond memory</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-8">
-          
-          <div class="container text-center pb-3 pt-3"><h1 class="text-color2-darker">Your notifications</h1></div>
-          <div class="container d-grid gap-4 text-center">
-            <div class="text-color2-dark">Sort notifications by:</div>
-            <div class="btn-group bg-color2" role="group" aria-label="Basic radio toggle button group">
+          <div class="container text-center pb-3 pt-3">
+            <div class="text-color2-dark text-center mb-2">Sort notifications by:</div>
+            <div class="btn-group bg-sort-bg w-100 mb-3" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
-              <label class="btn btn-outline-color2-darker" for="btnradio1">Messages</label>
+              <label class="btn btn-outline-sort-oul" for="btnradio1">Messages</label>
 
               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-              <label class="btn btn-outline-color2-darker" for="btnradio2">Hugs</label>
+              <label class="btn btn-outline-sort-oul" for="btnradio2">Hugs</label>
 
               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
-              <label class="btn btn-outline-color2-darker" for="btnradio3">Thoughts</label>
+              <label class="btn btn-outline-sort-oul" for="btnradio3">Thoughts</label>
 
               <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
-              <label class="btn btn-outline-color2-darker" for="btnradio4">Nudges</label>
+              <label class="btn btn-outline-sort-oul" for="btnradio4">Nudges</label>
 
               <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" />
-              <label class="btn btn-outline-color2-darker" for="btnradio5">Memories</label>
+              <label class="btn btn-outline-sort-oul" for="btnradio5">Memories</label>
             </div>
-            <div class="card">
-              <div class="card-header text-muted">Today</div>
-              <div class="card-body">
-                <h5 class="card-title">Grandma sent you a hug</h5>
-                <p class="card-text">"I was thinking about you and wanted you to know I'm always here for you."</p>
-              </div>
-              <div class="card-footer text-muted pt-3 pb-4">
-                <p class="card-text">Send Grandma a:</p>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <a href="#" class="btn btn-outline-success">Message</a>
-                  <a href="#" class="btn btn-outline-danger">Thought</a>
-                  <a href="#" class="btn btn-outline-secondary">Hug</a>
-                  <a href="#" class="btn btn-outline-warning">Nudge</a>
+            <form class="d-flex mb-5">
+              <input class="form-control me-2" type="search" placeholder="Search posts" aria-label="Search" />
+              <button class="btn btn-search" type="submit">Search</button>
+            </form>
+            <h1 class="text-sort-oul">Your notifications</h1>
+          </div>
+
+          <div class="container text-center">
+            <div class="scrollable d-grid gap-4 bg-feed-bg p-4 border rounded border-sort">
+              <div class="card border-sort-oul">
+                <div class="card-header text-muted bg-profile">Today</div>
+                <div class="card-body">
+                  <h5 class="card-title">Grandma sent you a hug</h5>
+                  <p class="card-text">"I was thinking about you and wanted you to know I'm always here for you."</p>
+                </div>
+                <div class="card-footer text-muted pt-3 pb-4 bg-profile">
+                  <p class="card-text">Send Grandma a:</p>
+                  <div class="btn-group" role="group" aria-label="Default button group">
+                    <a href="#" class="btn btn-outline-message">Message</a>
+                    <a href="#" class="btn btn-outline-thought">Thought</a>
+                    <a href="#" class="btn btn-outline-hug">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header text-muted">2 days ago</div>
-              <div class="card-body">
-                <h5 class="card-title">Mom sent you a hug</h5>
-                <p class="card-text">❤️</p>
-              </div>
-              <div class="card-footer text-muted pt-3 pb-4">
-                <p class="card-text">Send Mom a:</p>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <a href="#" class="btn btn-outline-success">Message</a>
-                  <a href="#" class="btn btn-outline-danger">Thought</a>
-                  <a href="#" class="btn btn-outline-secondary">Hug</a>
-                  <a href="#" class="btn btn-outline-warning">Nudge</a>
+              <div class="card border-sort-oul">
+                <div class="card-header text-muted bg-profile">2 days ago</div>
+                <div class="card-body">
+                  <h5 class="card-title">Mom sent you a hug</h5>
+                  <p class="card-text">❤️</p>
+                </div>
+                <div class="card-footer text-muted pt-3 pb-4 bg-profile">
+                  <p class="card-text">Send Mom a:</p>
+                  <div class="btn-group" role="group" aria-label="Default button group">
+                    <a href="#" class="btn btn-outline-message">Message</a>
+                    <a href="#" class="btn btn-outline-thought">Thought</a>
+                    <a href="#" class="btn btn-outline-hug">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header text-muted">3 days ago</div>
-              <div class="card-body">
-                <h5 class="card-title">Anne was thinking about you</h5>
-                <p class="card-text">"You inspire me"</p>
+              <div class="card border-sort-oul">
+                <div class="card-header text-muted bg-profile">3 days ago</div>
+                <div class="card-body">
+                  <h5 class="card-title">Anne was thinking about you</h5>
+                  <p class="card-text">"You inspire me"</p>
+                </div>
+                <div class="card-footer text-muted pt-3 pb-4 bg-profile">
+                  <p class="card-text">Send Anne a:</p>
+                  <div class="btn-group" role="group" aria-label="Default button group">
+                    <a href="#" class="btn btn-outline-message">Message</a>
+                    <a href="#" class="btn btn-outline-thought">Thought</a>
+                    <a href="#" class="btn btn-outline-hug">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                  </div>
+                </div>
               </div>
-              <div class="card-footer text-muted pt-3 pb-4">
-                <p class="card-text">Send Anne a:</p>
-                <div class="btn-group" role="group" aria-label="Default button group">
-                  <a href="#" class="btn btn-outline-success">Message</a>
-                  <a href="#" class="btn btn-outline-danger">Thought</a>
-                  <a href="#" class="btn btn-outline-secondary">Hug</a>
-                  <a href="#" class="btn btn-outline-warning">Nudge</a>
+              <div class="card border-sort-oul">
+                <div class="card-header text-muted bg-profile">Today</div>
+                <div class="card-body">
+                  <h5 class="card-title">Grandma sent you a hug</h5>
+                  <p class="card-text">"I was thinking about you and wanted you to know I'm always here for you."</p>
+                </div>
+                <div class="card-footer text-muted pt-3 pb-4 bg-profile">
+                  <p class="card-text">Send Grandma a:</p>
+                  <div class="btn-group" role="group" aria-label="Default button group">
+                    <a href="#" class="btn btn-outline-message">Message</a>
+                    <a href="#" class="btn btn-outline-thought">Thought</a>
+                    <a href="#" class="btn btn-outline-hug">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-sort-oul">
+                <div class="card-header bg-profile text-muted">2 days ago</div>
+                <div class="card-body">
+                  <h5 class="card-title">Mom sent you a hug</h5>
+                  <p class="card-text">❤️</p>
+                </div>
+                <div class="card-footer bg-profile text-muted pt-3 pb-4">
+                  <p class="card-text">Send Mom a:</p>
+                  <div class="btn-group" role="group" aria-label="Default button group">
+                    <a href="#" class="btn btn-outline-message">Message</a>
+                    <a href="#" class="btn btn-outline-thought">Thought</a>
+                    <a href="#" class="btn btn-outline-hug">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-sort-oul">
+                <div class="card-header bg-profile text-muted">3 days ago</div>
+                <div class="card-body">
+                  <h5 class="card-title">Anne was thinking about you</h5>
+                  <p class="card-text">"You inspire me"</p>
+                </div>
+                <div class="card-footer bg-profile text-muted pt-3 pb-4">
+                  <p class="card-text">Send Anne a:</p>
+                  <div class="btn-group" role="group" aria-label="Default button group">
+                    <a href="#" class="btn btn-outline-message">Message</a>
+                    <a href="#" class="btn btn-outline-thought">Thought</a>
+                    <a href="#" class="btn btn-outline-hug">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -32,11 +32,22 @@
 .m-width-100 {
   max-width: 50px;
 }
+.m-width-profile-img {
+  max-width: 150px;
+}
 .width-connections {
   max-width: 50px;
 }
 .width-connections-container {
   width: 100px;
+}
+.height-100 {
+  height: 100px;
+}
+.scrollable {
+  height: 100vh;
+  overflow-y: auto;
+  overflow: auto;
 }
 
 // Example (the btn-unique and btn-lazy class needs to be added somwhere

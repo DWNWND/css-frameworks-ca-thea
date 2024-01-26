@@ -38,7 +38,7 @@ $grays: (
 // scss-docs-start color-variables
 $blue: #84ace3;
 $indigo: #6610f2;
-$purple: #6f42c1;
+$purple: #897ca2;
 $pink: #f7b2d4;
 $red: #e68e97;
 $orange: #fd7e14;
@@ -299,7 +299,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: $teal;
+$primary: $purple;
 $secondary: $blue;
 $success: $green;
 $info: $cyan;
@@ -312,7 +312,7 @@ $dark: $gray-900;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary": $primary,
+  "primary": $purple,
   "secondary": $secondary,
   "success": $success,
   "info": $info,
@@ -324,7 +324,6 @@ $theme-colors: (
   //added by me
   "mycolor": $pink,
   "myreply": $orange,
-  "mynav": #e8dcff,
   "mylabel": #e5e4e4,
   "myfooter": #f8f5ff,
   "myheader": #e8dcff,
@@ -332,6 +331,35 @@ $theme-colors: (
   "color2": #fbf9ff,
   "color2-darker": #b3a4cf,
   "color2-dark": #59516a,
+
+  "mynav": #e1dfe3,
+
+  "feed": #d4c2fb,
+  "feed-bg": #fbfafe,
+  "profile": #f5f1ff,
+  "profile-bg": #efefef,
+  "profile-btn": #b3a4cf,
+
+  "activity": #e1dceb,  
+  "activity-bg": #8e86a1,  
+  "search": #8e86a1,
+  "post": #d8d3e2,
+  "post-bg": #f5f0ff,
+  "feeling-bg": #e6daff,
+  "sort-oul": #59516a,
+  "sort-bg": #dddae5,
+  "new-feature": #ace5fb,
+  "new-feature-bg": #e3f9ff,
+  
+  "memory": #a788ec,
+  "message": #a79fb9,
+  "hug": #b899f5,
+  "thought": #9a96a3,
+  "nudge": #8772b4,
+
+  //cards
+  "send-checkin": #dddae5,
+  "notifications": #faf8ff,
 );
 // scss-docs-end theme-colors-map
 

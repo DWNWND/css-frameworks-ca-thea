@@ -9,7 +9,7 @@
   </head>
   <body class="d-flex flex-column h-100 bg-color1">
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-sm navbar-light bg-mynav">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">THE CHECKIN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,51 +24,30 @@
                 <a class="nav-link active" href="index.html" aria-current="page">My profile</a>
               </li>
             </ul>
+            <form class="d-flex gap-2 align-items-center">
+              <div class="text-muted w-100">Add new connection:</div>
+              <input class="form-control" type="search" placeholder="Username" aria-label="Search" />
+              <button class="btn btn-primary" type="submit">Add</button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
     <main class="flex-shrink-0">
-      <div class="container row mt-5 pt-4 g-0 mx-auto">
+      <div class="container row mt-3 pt-4 g-0 mx-auto">
         <div class="col-sm container mb-4 d-grid gap-4">
-          <div class="card bg-unique-3">
-            <div class="card-header card-title h5">You have new notifications from:</div>
-            <div class="card-body bg-color1">
-              <div class="row">
-                <a href="#" class="col-3 d-flex flex-column align-items-center">
-                  <div class="m-width-100">
-                    <img src="/img/undraw_Drink_coffee_v3au.png" alt="Generic placeholder image" class="img-fluid" />
-                  </div>
-                  <p class="card-text text-center text-muted"><small>Olivia Taylor</small></p>
-                </a>
-                <a href="#" class="col-3 d-flex flex-column align-items-center">
-                  <div class="m-width-100">
-                    <img src="/img/undraw_Coffee_Time_e8cw.png" alt="Generic placeholder image" class="img-fluid" />
-                  </div>
-                  <p class="card-text text-center text-muted"><small>Alex Johnson</small></p>
-                </a>
-                <a href="#" class="col-3 d-flex flex-column align-items-center">
-                  <div class="m-width-100">
-                    <img src="/img/undraw_Drink_coffee_v3au.png" alt="Generic placeholder image" class="img-fluid" />
-                  </div>
-                  <p class="card-text text-center text-muted"><small>Anne Bell</small></p>
-                </a>
-                <a href="#" class="col-3 d-flex flex-column align-items-center">
-                  <div class="m-width-100">
-                    <img src="/img/undraw_Coffee_Time_e8cw.png" alt="Generic placeholder image" class="img-fluid" />
-                  </div>
-                  <p class="card-text text-center text-muted"><small>Eli Lil</small></p>
-                </a>
-              </div>
+          <div class="card bg-notifications">
+            <div class="card-header card-title h5">You have new 5 notifications</div>
+            <div class="card-body">
+              <a href="../feed/index.html" class="btn btn-feed w-100">Go to feed</a>
             </div>
-            <div class="card-footer"><a href="../feed/index.html" class="btn btn-secondary w-100">Go to feed</a></div>
           </div>
           <div class="card">
             <div class="card-header"><h5 class="card-title">Connections</h5></div>
             <div class="card-header">
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search connections" aria-label="Search" />
-                <button class="btn btn-unique" type="submit">Search</button>
+                <button class="btn btn-search" type="submit">Search</button>
               </form>
             </div>
             <div class="card-body">
@@ -160,23 +139,24 @@
               </div>
             </div>
             <div class="card-footer text-center"><a href="#" class="">see all connections</a></div>
-            <div class="card-footer text-muted pt-3 pb-4">
+            <div class="card-footer bg-send-checkin text-muted pt-3 pb-4">
               <h5 class="card-title fw-bolder h3 pt-3">Send a:</h5>
               <div class="card-body">
                 <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
-                  <a href="#" class="btn btn-success">Message</a>
-                  <a href="#" class="btn btn-danger">Thought</a>
-                  <a href="#" class="btn btn-secondary">Hug</a>
-                  <a href="#" class="btn btn-warning">Nudge</a>
+                  <a href="#" class="btn btn-message">Message</a>
+                  <a href="#" class="btn btn-thought">Thought</a>
+                  <a href="#" class="btn btn-hug">Hug</a>
+                  <a href="#" class="btn btn-nudge">Nudge</a>
+                  <a href="#" class="btn btn-memory flex-grow-1">Memory</a>
                 </div>
                 <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
-                  <a href="#" class="btn btn-success flex-grow-1">Message</a>
-                  <a href="#" class="btn btn-danger flex-grow-1">Thought</a>
-                  <a href="#" class="btn btn-secondary flex-grow-1">Hug</a>
-                  <a href="#" class="btn btn-warning flex-grow-1">Nudge</a>
+                  <a href="#" class="btn btn-message flex-grow-1">Message</a>
+                  <a href="#" class="btn btn-thought flex-grow-1">Thought</a>
+                  <a href="#" class="btn btn-hug flex-grow-1">Hug</a>
+                  <a href="#" class="btn btn-nudge flex-grow-1">Nudge</a>
+                  <a href="#" class="btn btn-memory flex-grow-1">Memory</a>
                 </div>
               </div>
-            
             </div>
           </div>
         </div>
@@ -191,7 +171,7 @@
                   <div class="flex-grow-1 ms-3">
                     <h5 class="mb-4 mt-3">Ola Olsen</h5>
 
-                    <div class="justify-content-around rounded-3 p-2 mb-2 bg-unique d-flex">
+                    <div class="justify-content-around rounded-3 p-2 mb-2 bg-profile d-flex">
                       <div>
                         <p class="small text-muted mb-1">Connections</p>
                         <p class="mb-0">12</p>
@@ -202,33 +182,33 @@
                       </div>
                     </div>
                     <div class="d-flex pt-1">
-                      <button type="button" class="btn btn-outline-primary me-1 flex-grow-1">Edit profile</button>
+                      <button type="button" class="btn btn-outline-profile-btn me-1 flex-grow-1">Edit profile / Connect</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card-footer"><div class="mb-2 mt-2 h3">"Feeling upbeat"</div></div>
-              <div class="card-footer">
+              <div class="card-footer bg-feeling-bg"><div class="mb-2 mt-2 h3">"Feeling upbeat"</div></div>
+              <div class="card-footer bg-post-bg">
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <textarea class="form-control height-100" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
                   <label for="floatingTextarea2">Share todays mood</label>
-                  <button type="submit" class="btn btn-outline-secondary w-100 mt-2">Post</button>
+                  <button type="submit" class="btn btn-post w-100 mt-2">Post</button>
                 </div>
               </div>
             </div>
             <div class="card">
-              <div class="card-header bg-color2">
+              <div class="card-header bg-activity-bg">
                 <h5 class="card-title mt-2">Your latest activity</h5>
               </div>
-              <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner bg-color2-dark">
+                <div class="carousel-inner bg-activity-bg">
                   <div class="carousel-item active container mb-5 mt-3">
-                    <div class="card bg-color2-darker">
+                    <div class="card bg-activity">
                       <div class="card-header text-muted">2 days ago</div>
                       <div class="card-body">
                         <h5 class="card-title">Sent mum a hug</h5>
@@ -237,7 +217,7 @@
                     </div>
                   </div>
                   <div class="carousel-item container mb-5 mt-3">
-                    <div class="card bg-color2-darker">
+                    <div class="card bg-activity">
                       <div class="card-header text-muted">2 days ago</div>
                       <div class="card-body">
                         <h5 class="card-title">Sent Anne a tought</h5>
@@ -246,7 +226,7 @@
                     </div>
                   </div>
                   <div class="carousel-item container mb-5 mt-3">
-                    <div class="card bg-color2-darker">
+                    <div class="card bg-activity">
                       <div class="card-header text-muted">4 days ago</div>
                       <div class="card-body">
                         <h5 class="card-title">Sent Grandma a message</h5>
@@ -265,7 +245,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <div class="card-footer text-center"><a href="#" class="">see all activity</a></div>
+              <div class="card-footer text-center bg-activity"><a href="#" class="">see all activity</a></div>
             </div>
           </div>
         </div>
