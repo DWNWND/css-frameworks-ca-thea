@@ -28,28 +28,3 @@
   overflow-y: auto;
   overflow: auto;
 }
-
-
-
-//TRY AND FIX THIS????
-
-// Example (the btn-unique and btn-lazy class needs to be added somwhere
-//The btn-transition-fancy should be added to the variables file together with the og transition
-$btn-transition-fancy: #{$btn-transition + ", transition 1s ease-in-out"};
-
-
-.btn {
-  &-unique {
-    @include button-variant($primary, $danger);
-    // font-family: Arial, Helvetica, sans-serif;
-    @include transition($btn-transition-fancy);
-
-    &:hover {
-      transform: scale(2);
-    }
-
-    &:focus {
-      transform: scale(2);
-    }
-  }
-}
