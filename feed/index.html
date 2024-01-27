@@ -120,21 +120,29 @@
         <div class="col-md-8">
           <div class="container text-center pb-3 pt-3">
             <div class="text-color2-dark text-center mb-2">Sort notifications by:</div>
-            <div class="btn-group bg-sort-bg w-100 mb-3" role="group" aria-label="Basic radio toggle button group">
+            <div class="btn-group d-none d-md-none d-xl-flex bg-sort-bg w-100 mb-3" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
               <label class="btn btn-outline-sort-oul" for="btnradio1">Messages</label>
-
               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
               <label class="btn btn-outline-sort-oul" for="btnradio2">Hugs</label>
-
               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
               <label class="btn btn-outline-sort-oul" for="btnradio3">Thoughts</label>
-
               <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
               <label class="btn btn-outline-sort-oul" for="btnradio4">Nudges</label>
-
               <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" />
               <label class="btn btn-outline-sort-oul" for="btnradio5">Memories</label>
+            </div>
+            <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly w-100 mb-3" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+              <label class="btn btn-outline-sort-oul bg-sort-bg flex-grow-1" for="btnradio1">Messages</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+              <label class="btn btn-outline-sort-oul bg-sort-bg flex-grow-1" for="btnradio2">Hugs</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+              <label class="btn btn-outline-sort-oul bg-sort-bg flex-grow-1" for="btnradio3">Thoughts</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
+              <label class="btn btn-outline-sort-oul bg-sort-bg flex-grow-1" for="btnradio4">Nudges</label>
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" />
+              <label class="btn btn-outline-sort-oul bg-sort-bg flex-grow-1" for="btnradio5">Memories</label>
             </div>
             <form class="d-flex mb-5">
               <input class="form-control me-2" type="search" placeholder="Search posts" aria-label="Search" />
@@ -153,12 +161,19 @@
                 </div>
                 <div class="card-footer text-muted pt-3 pb-4 bg-profile">
                   <p class="card-text">Send Grandma a:</p>
-                  <div class="btn-group" role="group" aria-label="Default button group">
+                  <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
                     <a href="#" class="btn btn-outline-message">Message</a>
                     <a href="#" class="btn btn-outline-thought">Thought</a>
                     <a href="#" class="btn btn-outline-hug">Hug</a>
                     <a href="#" class="btn btn-outline-nudge">Nudge</a>
-                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
+                  </div>
+                  <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                    <a href="#" class="btn btn-outline-message flex-grow-1">Message</a>
+                    <a href="#" class="btn btn-outline-thought flex-grow-1">Thought</a>
+                    <a href="#" class="btn btn-outline-hug flex-grow-1">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge flex-grow-1">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
                   </div>
                 </div>
               </div>
@@ -170,12 +185,19 @@
                 </div>
                 <div class="card-footer text-muted pt-3 pb-4 bg-profile">
                   <p class="card-text">Send Mom a:</p>
-                  <div class="btn-group" role="group" aria-label="Default button group">
+                  <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
                     <a href="#" class="btn btn-outline-message">Message</a>
                     <a href="#" class="btn btn-outline-thought">Thought</a>
                     <a href="#" class="btn btn-outline-hug">Hug</a>
                     <a href="#" class="btn btn-outline-nudge">Nudge</a>
-                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
+                  </div>
+                  <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                    <a href="#" class="btn btn-outline-message flex-grow-1">Message</a>
+                    <a href="#" class="btn btn-outline-thought flex-grow-1">Thought</a>
+                    <a href="#" class="btn btn-outline-hug flex-grow-1">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge flex-grow-1">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
                   </div>
                 </div>
               </div>
@@ -187,12 +209,19 @@
                 </div>
                 <div class="card-footer text-muted pt-3 pb-4 bg-profile">
                   <p class="card-text">Send Anne a:</p>
-                  <div class="btn-group" role="group" aria-label="Default button group">
+                  <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
                     <a href="#" class="btn btn-outline-message">Message</a>
                     <a href="#" class="btn btn-outline-thought">Thought</a>
                     <a href="#" class="btn btn-outline-hug">Hug</a>
                     <a href="#" class="btn btn-outline-nudge">Nudge</a>
-                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
+                  </div>
+                  <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                    <a href="#" class="btn btn-outline-message flex-grow-1">Message</a>
+                    <a href="#" class="btn btn-outline-thought flex-grow-1">Thought</a>
+                    <a href="#" class="btn btn-outline-hug flex-grow-1">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge flex-grow-1">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
                   </div>
                 </div>
               </div>
@@ -204,12 +233,19 @@
                 </div>
                 <div class="card-footer text-muted pt-3 pb-4 bg-profile">
                   <p class="card-text">Send Grandma a:</p>
-                  <div class="btn-group" role="group" aria-label="Default button group">
+                  <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
                     <a href="#" class="btn btn-outline-message">Message</a>
                     <a href="#" class="btn btn-outline-thought">Thought</a>
                     <a href="#" class="btn btn-outline-hug">Hug</a>
                     <a href="#" class="btn btn-outline-nudge">Nudge</a>
-                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
+                  </div>
+                  <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                    <a href="#" class="btn btn-outline-message flex-grow-1">Message</a>
+                    <a href="#" class="btn btn-outline-thought flex-grow-1">Thought</a>
+                    <a href="#" class="btn btn-outline-hug flex-grow-1">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge flex-grow-1">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
                   </div>
                 </div>
               </div>
@@ -221,12 +257,19 @@
                 </div>
                 <div class="card-footer bg-profile text-muted pt-3 pb-4">
                   <p class="card-text">Send Mom a:</p>
-                  <div class="btn-group" role="group" aria-label="Default button group">
+                  <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
                     <a href="#" class="btn btn-outline-message">Message</a>
                     <a href="#" class="btn btn-outline-thought">Thought</a>
                     <a href="#" class="btn btn-outline-hug">Hug</a>
                     <a href="#" class="btn btn-outline-nudge">Nudge</a>
-                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
+                  </div>
+                  <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                    <a href="#" class="btn btn-outline-message flex-grow-1">Message</a>
+                    <a href="#" class="btn btn-outline-thought flex-grow-1">Thought</a>
+                    <a href="#" class="btn btn-outline-hug flex-grow-1">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge flex-grow-1">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
                   </div>
                 </div>
               </div>
@@ -238,12 +281,19 @@
                 </div>
                 <div class="card-footer bg-profile text-muted pt-3 pb-4">
                   <p class="card-text">Send Anne a:</p>
-                  <div class="btn-group" role="group" aria-label="Default button group">
+                  <div class="btn-group d-none d-md-none d-xl-flex" role="group" aria-label="Default button group">
                     <a href="#" class="btn btn-outline-message">Message</a>
                     <a href="#" class="btn btn-outline-thought">Thought</a>
                     <a href="#" class="btn btn-outline-hug">Hug</a>
                     <a href="#" class="btn btn-outline-nudge">Nudge</a>
-                    <a href="#" class="btn btn-outline-memory">Memory</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
+                  </div>
+                  <div class="d-flex d-md-flex d-xl-none flex-wrap gap-2 justify-content-evenly" role="group">
+                    <a href="#" class="btn btn-outline-message flex-grow-1">Message</a>
+                    <a href="#" class="btn btn-outline-thought flex-grow-1">Thought</a>
+                    <a href="#" class="btn btn-outline-hug flex-grow-1">Hug</a>
+                    <a href="#" class="btn btn-outline-nudge flex-grow-1">Nudge</a>
+                    <a href="#" class="btn btn-outline-memory flex-grow-1">Memory</a>
                   </div>
                 </div>
               </div>
@@ -252,7 +302,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer mt-auto py-3 bg-light bg-myfooter">
+    <footer class="footer mt-auto py-3 bg-light bg-myfooter mt-2">
       <div class="container text-center">
         <span class="fst-italic text-muted">Check-in on the people you care about.</span>
       </div>
