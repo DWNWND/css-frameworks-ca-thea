@@ -18,8 +18,10 @@ The goal of this course was to:
 
 ## Course Assignment
 
-- [Brief](docs/CA_Brief.pdf)
-- [Criteria](docs/CA_MarkingCriteria.pdf)
+- [Brief][CA _Brief.pdf](https://github.com/DWNWND/css-frameworks-ca-thea/files/14071007/CA._Brief.pdf)
+
+- [Criteria][CA_MarkingCriteria.pdf](https://github.com/DWNWND/css-frameworks-ca-thea/files/14071009/CA_MarkingCriteria.pdf)
+
 
 ### Authentication page (/index.html)
 
