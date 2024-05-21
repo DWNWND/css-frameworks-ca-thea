@@ -1,1 +1,23 @@
+// Configuration
+@import "variables";
 
+// Bootstrap main file
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.m-width-profile-img {
+  max-width: 150px;
+}
+.width-connections {
+  max-width: 50px;
+}
+.width-connections-container {
+  width: 100px;
+}
+.height-100 {
+  height: 100px;
+}
+.scrollable {
+  height: 85vh;
+  overflow-y: auto;
+  overflow: auto;
+}

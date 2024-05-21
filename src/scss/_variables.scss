@@ -1,0 +1,59 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// scss-docs-start color-variables
+$blue: #84ace3;
+$purple: #6a5f7e;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue": $blue,
+  "purple": $purple,
+);
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary: $purple;
+$secondary: $blue;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $purple,
+
+  //added by me
+  "myfooter": #f8f5ff,
+  "color2-dark": #59516a,
+
+  "mynav": #e1dfe3,
+
+  "feed": #d4c2fb,
+  "feed-bg": #fbfafe,
+  "profile": #f5f1ff,
+  "profile-bg": #efefef,
+  "profile-btn": #7e69a5,
+
+  "activity": #e1dceb,
+  "activity-bg": #afa6c5,
+  "search": #8e86a1,
+  "post": #514665,
+  "post-bg": #f5f0ff,
+  "feeling-bg": #e6daff,
+  "sort-oul": #59516a,
+  "sort-bg": #dddae5,
+  "new-feature": #ace5fb,
+  "new-feature-bg": #e3f9ff,
+
+  "memory": #7643e3,
+  "message": #6b6084,
+  "hug": #653eb2,
+  "thought": #4b4a4f,
+  "nudge": #5d4a85,
+
+  //cards
+  "send-checkin": #dddae5,
+  "notifications": #faf8ff,
+);
+// scss-docs-end theme-colors-map
